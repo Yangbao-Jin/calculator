@@ -1,0 +1,218 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Expression Calculator</title>
+</head>
+<body>
+    <h2>Arithmetic Expression Calculator</h1>
+    <form action="/calculate/" method="post" id="calcForm">
+        {% csrf_token %}
+        <input type="text" name="expression" placeholder="Enter arithmetic expression" value="{{ expression }}" required id="expressionInput">
+        
+        <br>
+        <input type="submit" value="Submit">
+        <input type="button" value="Clear" id="clearButton">
+    </form>
+    <br>
+    <div id="result">
+        {% if result %}
+            <strong>Result:</strong> <span>{{ result }}</span>
+        {% else %}
+            <strong>Result:</strong> <span id="resultBox">No result yet.</span>
+        {% endif %}
+    </div>
+
+    <script>
+        document.getElementById('clearButton').addEventListener('click', function() {
+            document.getElementById('expressionInput').value = '';
+        });
+    </script>
+
+</body>
+</html> -->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Expression Calculator</title>  -->
+    <!-- 引入 Bootstrap CSS -->
+   <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Arithmetic Expression Calculator</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="/calculate/" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+        
+                    <input type="text" class="form-control" id="expression" name="expression" placeholder="Enter arithmetic expression" value="{{ expression }}" required>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button id="clearBtn" type="button" class="btn btn-secondary">Clear</button>
+
+                </div>
+            </form> -->
+
+            <!--<div class="form-group mt-4">
+                <label for="resultBox"><strong>Result:</strong></label>
+                <input type="text" class="form-control" id="resultBox" readonly style="background-color: #e9ecef;" value="{% if result %}{{ result }}{% else %}No result yet.{% endif %}">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('clearBtn').addEventListener('click', function() {
+        document.getElementById('expression').value = '';
+        document.getElementById('resultBox').value = 'No result yet.';
+    });
+</script> -->
+
+    <!-- 引入 jQuery 和 Bootstrap Bundle（包含 Popper） -->
+<!-- 引入 Bootstrap JS 和 Popper.js -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html> -->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Expression Calculator</title>-->
+    <!-- 引入 Bootstrap CSS -->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 自定义样式 */
+        .custom-input {
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        .custom-input:focus {
+            border-color: #0056b3;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Arithmetic Expression Calculator</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">-->
+            <!-- 使用Bootstrap的卡片组件 -->
+            <!-- <div class="card">
+                <div class="card-body">
+                    <form action="/calculate/" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" class="form-control custom-input" id="expression" name="expression" placeholder="Enter arithmetic expression" value="{{ expression }}" required>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button id="clearBtn" type="button" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </form>
+                    <div class="form-group mt-4">
+                        <label for="resultBox"><strong>Result:</strong></label>
+                        <input type="text" class="form-control" id="resultBox" readonly style="background-color: #e9ecef;" value="{% if result %}{{ result }}{% else %}No result yet.{% endif %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('clearBtn').addEventListener('click', function() {
+        document.getElementById('expression').value = '';
+        document.getElementById('resultBox').value = 'No result yet.';
+    });
+</script> -->
+
+    <!-- 引入 jQuery 和 Bootstrap Bundle（包含 Popper） -->
+
+<!-- 引入 Bootstrap JS 和 Popper.js -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Expression Calculator</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Calculator metal texture style */
+        .calculator-container {
+            border: 5px solid #333;
+            border-radius: 15px;
+            padding: 20px;
+            background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .form-control {
+            border-radius: 5px;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Arithmetic Expression Calculator</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6 calculator-container">
+            <form action="/calculate/" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" class="form-control" id="expression" name="expression" placeholder="Enter arithmetic expression" value="{{ expression }}" required>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button id="clearBtn" type="button" class="btn btn-secondary">Clear</button>
+                </div>
+            </form>
+            <div class="form-group mt-4">
+                <label for="resultBox"><strong>Result:</strong></label>
+                <input type="text" class="form-control" id="resultBox" readonly style="background-color: #e9ecef;" value="{% if result %}{{ result }}{% else %}No result yet.{% endif %}">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('clearBtn').addEventListener('click', function() {
+        document.getElementById('expression').value = '';
+        document.getElementById('resultBox').value = 'No result yet.';
+    });
+</script>
+<!-- 引入 Bootstrap JS 和 Popper.js -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+
+</body>
+</html>
