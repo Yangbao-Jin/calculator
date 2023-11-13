@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-yz=0q)2#@-k=y&(abffspny380!%9$**4h8u$)ee!9y*q4yvcb
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['web-calculator-e3448e1888fa.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['web-calculator-e3448e1888fa.herokuapp.com', 'localhost', '127.0.0.1', 'www.acslschool.org']
+
 
 
 # Application definition
